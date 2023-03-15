@@ -1,4 +1,4 @@
-# Natural language processing course 2022/23: `The Sentence Shufflers
+# Natural language processing course 2022/23: `The Sentence Shufflers`
 
 Team members:
  * `Aljaž Grdadolnik`, `63160120`, `ag5319@student.uni-lj.si`
