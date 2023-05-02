@@ -1,0 +1,23 @@
+Bootstrap: docker
+From: pytorch/pytorch:2.0.0-cuda11.7-cudnn8-devel
+Stage: build
+
+%post
+
+apt update
+
+apt install -y pdsh
+
+pip install --no-cache-dir sentencepiece 
+pip install --no-cache-dir transformers
+pip install --no-cache-dir accelerate
+pip install --no-cache-dir evaluate
+pip install --no-cache-dir protobuf==3.20.0
+pip install --no-cache-dir datasets
+pip install --no-cache-dir pandas
+pip install --no-cache-dir rouge-score
+pip install --no-cache-dir nltk
+pip install --no-cache-dir openai
+
+# build with:
+# srun --pty --partition=gpu -N1 -n1 -c24 --gpus=1 --mem=24000 singularity build containers/nlp_pytorch.sif nlp_singularity_proj.def
