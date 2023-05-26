@@ -13,8 +13,10 @@ There are two scripts available `test_model.py` and `test_model_csv.py`.
 
 First one is interactive and allows paraphrasing of any sentence given via console input.
 
-The second on works on a csv file. Each line should be a sentence, the script then appends the file with a new column
+The second one works on a csv file. Each line should be a sentence, the script then appends the file with a new column
 of paraphrased sentences. Fist define input and output files in the script and the run it.
+
+To evaluate the model(with metrics BLEU, ROUGE, BERTScore, WER, METEROR, Google BLEU, ParaScore) use calculate_scores.py script where you need to provide a path to the file which contains the paraphrase pairs(reference\tgenerated). The script crates a csv file with all the scores in a file with the same name as the input and added "-metrics" at the end.
 
 ## How to train the model?
 Use the `train_model.py` script. It allows retraining of the model, just define the checkpoint name in load_model function.
