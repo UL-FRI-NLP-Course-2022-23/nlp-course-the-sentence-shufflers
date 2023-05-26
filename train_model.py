@@ -17,7 +17,7 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 # nltk.download('punkt')
 # print(transformers.__version__)
-dataset_name = "MaCoCu-dataset-1k-ids"
+dataset_name = "MaCoCu-dataset-(all)2M+-filtered-with-ids"
 
 
 # ==================== define functions here ====================
@@ -72,7 +72,7 @@ def load_model(model_checkpoint="cjvt/t5-sl-small"):
 
 def main(tokenizer, model, model_name):
     # Loads our dataset
-    raw_datasets = load_dataset('csv', data_files=[f'./MaCoCu-datasets/{dataset_name}.csv'], delimiter='\t', skiprows=1,
+    raw_datasets = load_dataset('csv', data_files=[f'./dataset/{dataset_name}.csv'], delimiter='\t', skiprows=1,
                                 column_names=['input_ids', 'input_text', 'target_text'], split='train')
 
     print(f"Using dataset: {dataset_name}")

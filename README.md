@@ -26,6 +26,9 @@ on **line 20** in train script.
 ## Other scripts
 There are other scripts that will help you create usable dataset. Each script contains a comment which tells you what it does.
 
+### Info
+To download the model and dataset you might need to install [Git LFS](https://git-lfs.com/).
+
 ## Link to OneDrive 
 The model and all the training/evaluation data is also avalilable in the OneDrive folder linked bellow. You can access this folder using your student account. 
 https://unilj-my.sharepoint.com/:f:/g/personal/am8130_student_uni-lj_si/Esqv-sHsB7dFoTv7vxDCiNwB1P2XZgH-WxirZpo1QdeUMw?e=2N5glz
