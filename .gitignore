@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+*/.idea
+fetch_srt
+fetch_srt.zip
+
+datasets
+checkpoints
+*.csv
+.idea

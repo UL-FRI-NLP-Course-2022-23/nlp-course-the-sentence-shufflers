@@ -7,3 +7,19 @@ Team members:
  
 Group public acronym/name: `TSS`
  > This value will be used for publishing marks/scores. It will be known only to you and not you colleagues.
+
+## How to evaluate?
+There are two scripts available `test_model.py` and `test_model_csv.py`.
+
+First one is interactive and allows paraphrasing of any sentence given via console input.
+
+The second on works on a csv file. Each line should be a sentence, the script then appends the file with a new column
+of paraphrased sentences. Fist define input and output files in the script and the run it.
+
+## How to train the model?
+Use the `train_model.py` script. It allows retraining of the model, just define the checkpoint name in load_model function.
+Pick an appropriately structured dataset and put it into the `datasets` folder. Write down the name of that dataset 
+on **line 20** in train script.
+
+## Other scripts
+There are other scripts that will help you create usable dataset. Each script contains a comment which tells you what it does.

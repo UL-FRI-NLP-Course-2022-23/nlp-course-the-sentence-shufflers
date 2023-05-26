@@ -10,10 +10,10 @@ import csv
 # end_line: line number to end at in the input files
 # if end_line is None, the function will run until the end of the file
 
-def generate_dataset_csv(file1, file2, output_file, delimiter_g="\t", start_line=0, end_line=None):
+def generate_dataset_csv(file1, file2, output_file, delimiter="\t", start_line=0, end_line=None):
     # open input and output files
     with open(file1, "r", encoding="utf-8") as f1, open(file2, "r", encoding="utf-8") as f2, open(output_file, "w", newline="", encoding="utf-8") as out:
-        writer = csv.writer(out, delimiter=delimiter_g)
+        writer = csv.writer(out, delimiter=delimiter)
         writer.writerow(["Original", "Paraphrase[Translation]"])
 
         # if end_line is None, set it to infinity

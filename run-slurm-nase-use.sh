@@ -11,7 +11,7 @@
 #SBATCH --job-name="NLP paraphrase training"
 
 # train the model
-# srun singularity exec --nv ./containers/nlp_pytorch.sif python "./paraphrase_projekt.py"
+# srun singularity exec --nv ./containers/nlp_pytorch.sif python "./train_model.py"
 
 # just use the model 
-srun singularity exec --nv ./containers/nlp_pytorch.sif python "./use_model.py"
+srun singularity exec --nv ./containers/nlp_pytorch.sif python "./test_model.py"
