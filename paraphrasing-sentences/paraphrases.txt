@@ -1,8 +1,0 @@
-paraphrase: To je težko delo, tako psihično kot tudi fizično. Ti ljudje so za svoje delo tudi zelo slabo plačan.
-Generated:  To je težko delo, tako psihično kot fizično. Ti ljudje so zelo slabo plačani za svoje delo.
-
-paraphrase: Nasproti jim bo namreč stalo moštvo beograjskega Partizana, ki je redni del sezone v tem tekmovanju zaključilo povsem na vrhu, za nameček pa so varovanci legendarnega Željka Obradovića močan pečat pustili tudi v elitni Evroligi, kjer jim je zgolj splet nesrečnih okoliščin preprečil nastop na zaključnem turnirju četverice v Kaunasu.
-Generated:  Nasproti jim bo stalo moštvo beograjskega Partizana, ki je redni del sezone zaključil povsem na vrhu, medtem ko so igralci legendarnega Željka Obradovića pustili močan pečat tudi v elitni Evroligi, kjer jim je le splet nesrečnih okoliščin preprečil nastop na zaključnem turnirju četverice v Kaunasu.
-
-paraphrase: To je vselej dvorezen meč. Lahko se obrne v eno ali drugo smer.
-Generated:  To je vedno dvorezen meč, ki se lahko obrne v eno ali drugo smer.
