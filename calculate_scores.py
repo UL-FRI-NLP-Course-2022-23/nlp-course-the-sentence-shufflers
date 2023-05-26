@@ -5,8 +5,7 @@ import evaluate
 import numpy as np
 from parascore import ParaScorer
 
-
-scorer = ParaScorer(lang="sl", model_type = 'bert-base-uncased')
+scorer = ParaScorer(lang="sl", model_type='bert-base-uncased')
 
 metric_bleu = evaluate.load("bleu")
 metric_rouge = evaluate.load("rouge")
@@ -14,6 +13,7 @@ metric_bertscore = evaluate.load("bertscore")
 metric_wer = evaluate.load("wer")
 metric_meteor = evaluate.load("meteor")
 metric_gleu = evaluate.load("google_bleu")
+
 
 def calculate_matrices(csv_file_in, csv_file_out):
     # calculate metrics and write the results to csv file
@@ -76,9 +76,11 @@ def calculate_matrices(csv_file_in, csv_file_out):
     csv_file_in.close()
     csv_file_out.close()
 
+
 if __name__ == '__main__':
-    file_in = '' # a csv file with the following columns: id, original sentence, length, paraphrase
+    file_in = ''  # a csv file with the following columns: id, original sentence, length, paraphrase
     file = open(file_in, 'r', encoding='utf8')
-    file_out = os.path.join(os.path.dirname(file_in), os.path.basename(file_in).split('.')[0] + '-metrics.' + os.path.basename(file_in).split('.')[-1])
+    file_out = os.path.join(os.path.dirname(file_in), os.path.basename(file_in).split('.')[0] + '-metrics.' +
+                            os.path.basename(file_in).split('.')[-1])
     out = open(file_out, 'w', encoding='utf8', newline='')
     calculate_matrices(file, out)

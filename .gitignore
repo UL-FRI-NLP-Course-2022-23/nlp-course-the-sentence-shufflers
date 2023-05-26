@@ -133,7 +133,11 @@ fetch_srt
 fetch_srt.zip
 
 datasets
-checkpoints
+checkpoints/t5-sl-small-finetuned-MaCoCu
+checkpoints/t5-sl-small-finetuned-MaCoCu-2M-bleu
+checkpoints/t5-sl-small-finetuned-MaCoCu-250k-bleu
+checkpoints/aljaz
+
 *.csv
 .idea
 
