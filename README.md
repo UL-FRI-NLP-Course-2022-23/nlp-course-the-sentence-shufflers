@@ -23,6 +23,9 @@ Use the `train_model.py` script. It allows retraining of the model, just define 
 Pick an appropriately structured dataset and put it into the `datasets` folder. Write down the name of that dataset 
 on **line 20** in train script.
 
+## Provided dataset
+You can you the already preprocessed dataset, which can be found in the dataset folder in the root of the project. The dataset consists of sentences from the MaCoCu corpus and open subtitles.
+
 ## Other scripts
 There are other scripts that will help you create usable dataset. Each script contains a comment which tells you what it does.
 
